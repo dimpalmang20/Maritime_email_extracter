@@ -1,0 +1,104 @@
+[
+    {
+        "emails": [],
+        "phones": [],
+        "laycan": [
+            "16-20 July"
+        ],
+        "dwt": [],
+        "load_port": [
+            "Paranagua"
+        ],
+        "discharge_port": [
+            "BIK"
+        ],
+        "quantity": 30000,
+        "cargo": [
+            "Corn"
+        ],
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "Cargo: Corn",
+                "LP: Paranagua",
+                "DP: BIK",
+                "Vessel Type: UMX"
+            ]
+        },
+        "maritime_terms": [
+            {
+                "short_form": "LP",
+                "full_form": "Load Port"
+            },
+            {
+                "short_form": "DP",
+                "full_form": "Discharge Port"
+            },
+            {
+                "short_form": "mts",
+                "full_form": "metric tons"
+            },
+            {
+                "short_form": "UMX",
+                "full_form": "Ultramax"
+            }
+        ],
+        "confidence_score": 100.0,
+        "extraction_status": "HIGH_CONFIDENCE"
+    },
+    {
+        "emails": [
+            "steve@seaschiffe.com"
+        ],
+        "phones": [
+            "+91-8459221078\n\n"
+        ],
+        "laycan": [
+            "20-25 July"
+        ],
+        "dwt": [],
+        "load_port": [
+            "Bushehr"
+        ],
+        "discharge_port": [
+            "Doha"
+        ],
+        "quantity": 45000,
+        "cargo": [
+            "Coal"
+        ],
+        "signature": {
+            "emails": [
+                "steve@seaschiffe.com"
+            ],
+            "phones": [
+                "+91-8459221078\n\n"
+            ],
+            "names": [
+                "Cargo: Coal",
+                "LP: Bushehr",
+                "DP: Doha",
+                "Steve",
+                "Coal shipment available.",
+                "Need vessel urgently."
+            ]
+        },
+        "maritime_terms": [
+            {
+                "short_form": "LP",
+                "full_form": "Load Port"
+            },
+            {
+                "short_form": "DP",
+                "full_form": "Discharge Port"
+            },
+            {
+                "short_form": "mts",
+                "full_form": "metric tons"
+            }
+        ],
+        "confidence_score": 100.0,
+        "extraction_status": "HIGH_CONFIDENCE"
+    }
+]
