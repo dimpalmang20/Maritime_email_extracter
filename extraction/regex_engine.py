@@ -1,5 +1,6 @@
 import re
-
+from extraction.knowledge_base import CARGO_KEYWORDS
+from extraction.knowledge_base import PORT_KEYWORDS
 
 def extract_email(text):
     pattern = r'[\w\.-]+@[\w\.-]+'
@@ -17,18 +18,39 @@ def extract_laycan(text):
 
 
 def extract_dwt(text):
-    pattern = r'(\d{2,3}K)'
-    return re.findall(pattern, text)
 
+    pattern = r'(\\d{4,6})\\s*DWT'
+
+    result = re.findall(pattern, text, re.IGNORECASE)
+
+    return result
 
 def extract_lp(text):
-    pattern = r'LP:\s*([A-Za-z]+)'
-    return re.findall(pattern, text, re.IGNORECASE)
+
+    text = text.lower()
+
+    for port in PORT_KEYWORDS:
+
+        if port in text:
+
+            return port.title()
+
+    return None
+
+
 
 
 def extract_dp(text):
-    pattern = r'DP:\s*([A-Za-z]+)'
-    return re.findall(pattern, text, re.IGNORECASE)
+
+    text = text.lower()
+
+    for port in PORT_KEYWORDS:
+
+        if port in text:
+
+            return port.title()
+
+    return None
 
 
 def extract_quantity(text):
@@ -37,5 +59,16 @@ def extract_quantity(text):
 
 
 def extract_cargo(text):
-    pattern = r'Cargo:\s*([A-Za-z]+)'
-    return re.findall(pattern, text, re.IGNORECASE)
+
+    text = text.lower()
+
+    found_cargo = []
+
+
+    for cargo in CARGO_KEYWORDS:
+
+        if cargo in text:
+
+            found_cargo.append(cargo)
+
+    return found_cargo

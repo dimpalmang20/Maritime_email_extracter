@@ -1,0 +1,15 @@
+venv/
+
+__pycache__/
+
+*.pyc
+
+.env
+
+maritime.db
+
+output/
+
+.streamlit/
+
+.DS_Store

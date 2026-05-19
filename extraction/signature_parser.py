@@ -1,5 +1,5 @@
 import re
-
+from extraction.normalization import clean_phone, clean_email
 
 def extract_signature(text):
 
@@ -26,8 +26,12 @@ def extract_signature(text):
         ):
             names.append(line)
 
+    cleaned_emails = [clean_email(email) for email in emails]
+
+    cleaned_phones = [clean_phone(phone) for phone in phones]
+
     return {
-        "emails": emails,
-        "phones": phones,
-        "names": names
+    "emails": cleaned_emails,
+    "phones": cleaned_phones,
+    "names": names
     }

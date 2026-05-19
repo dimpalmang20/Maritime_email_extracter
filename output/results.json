@@ -1,104 +1,1397 @@
 [
     {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "VC_CARGO",
         "emails": [],
         "phones": [],
-        "laycan": [
-            "16-20 July"
+        "laycan": null,
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [],
+        "entities": [],
+        "confidence_score": 0,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
         ],
-        "dwt": [],
-        "load_port": [
-            "Paranagua"
-        ],
-        "discharge_port": [
-            "BIK"
-        ],
-        "quantity": 30000,
-        "cargo": [
-            "Corn"
-        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": "Type",
+        "vessel_type": "SUPRAMAX",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
         "signature": {
             "emails": [],
             "phones": [],
             "names": [
-                "Cargo: Corn",
-                "LP: Paranagua",
-                "DP: BIK",
-                "Vessel Type: UMX"
+                "Vessel Type: SUPRAULTRAMAX"
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [],
+        "confidence_score": 10,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 1,
+                "TC": 1,
+                "TONNAGE": 1
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": "60000",
+        "cargo": "Bulkharmlesscargo",
+        "cargo_type": "Unknown",
+        "vessel_name": "Grabber Fitted\nLaycan",
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "58",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "JULY 2025",
+                "label": "DATE"
+            }
+        ],
+        "confidence_score": 30,
+        "validation_issues": [
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 3,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "45 TO 55 DAYS",
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": "W",
+        "discharge_port": "W",
+        "detected_ports": [
+            "wafr"
+        ],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [
+            {
+                "short_form": "WAFR",
+                "full_form": "West Africa"
+            }
+        ],
+        "entities": [
+            {
+                "text": "1SP",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "1SP",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "South China",
+                "label": "LOC"
+            },
+            {
+                "text": "ABOUT 45 TO",
+                "label": "CARDINAL"
+            }
+        ],
+        "confidence_score": 40,
+        "validation_issues": [
+            "Cargo Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": "Type",
+        "vessel_type": "SUPRAMAX",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "Vessel Type: SUPRAULTRAMAX"
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "3.75",
+                "label": "CARDINAL"
+            }
+        ],
+        "confidence_score": 10,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 1,
+                "TC": 1,
+                "TONNAGE": 1
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "18th - 20th JULY",
+        "dwt": "65000",
+        "cargo": "Bulkharmlesscargo",
+        "cargo_type": "Unknown",
+        "vessel_name": "Grabber Fitted\nLaycan",
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "60",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "18th - 20th",
+                "label": "DATE"
+            }
+        ],
+        "confidence_score": 40,
+        "validation_issues": [
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 3,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "15 TO 20 DAYS",
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": "E",
+        "discharge_port": "E",
+        "detected_ports": [
+            "eci"
+        ],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [
+            {
+                "short_form": "ECI",
+                "full_form": "East Coast India"
+            }
+        ],
+        "entities": [
+            {
+                "text": "1SP",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "ECI",
+                "label": "ORG"
+            },
+            {
+                "text": "ABOUT 15 TO 20 DAYS",
+                "label": "DATE"
+            },
+            {
+                "text": "3.75",
+                "label": "CARDINAL"
+            }
+        ],
+        "confidence_score": 40,
+        "validation_issues": [
+            "Cargo Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [
+            "ayushsharma9491@outlook.com",
+            "anish@ybglobalshipping.com",
+            "ansalananish@hotmail.com",
+            "chartering@ybglobalshipping.com"
+        ],
+        "phones": [
+            "91 9523757703  ",
+            "91 9600248134  "
+        ],
+        "laycan": null,
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [
+                "ayushsharma9491@outlook.com",
+                "anish@ybglobalshipping.com",
+                "ansalananish@hotmail.com",
+                "chartering@ybglobalshipping.com"
+            ],
+            "phones": [
+                "91 9523757703  ",
+                "91 9600248134  "
+            ],
+            "names": [
+                "Ayush Sharma",
+                "Chartering",
+                "Anish Ansalan",
+                "Chartering Head"
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "Ayush Sharma",
+                "label": "PERSON"
+            },
+            {
+                "text": "MobileWhatsApp",
+                "label": "PRODUCT"
+            },
+            {
+                "text": "91",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "9523757703",
+                "label": "DATE"
+            },
+            {
+                "text": "Anish Ansalan\nChartering Head\nEmail",
+                "label": "PERSON"
+            },
+            {
+                "text": "91",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "9600248134",
+                "label": "DATE"
+            },
+            {
+                "text": "BIMCO",
+                "label": "ORG"
+            },
+            {
+                "text": "183222",
+                "label": "DATE"
+            },
+            {
+                "text": "The Meydan Hotel Granstad",
+                "label": "WORK_OF_ART"
+            },
+            {
+                "text": "6th",
+                "label": "ORDINAL"
+            },
+            {
+                "text": "Meydan Road Nad Al Sheba",
+                "label": "FAC"
+            },
+            {
+                "text": "Dubai",
+                "label": "GPE"
+            },
+            {
+                "text": "U.A.E",
+                "label": "ORG"
+            }
+        ],
+        "confidence_score": 0,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": "s for our following firm requirements",
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "Dear All",
+                "Good day."
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [],
+        "confidence_score": 0,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 1,
+                "TONNAGE": 1
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": "22000",
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "HANDYMAX",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "AC SeaSchiffe"
             ]
         },
         "maritime_terms": [
             {
-                "short_form": "LP",
-                "full_form": "Load Port"
+                "short_form": "HMAX",
+                "full_form": "Handymax"
+            }
+        ],
+        "entities": [
+            {
+                "text": "AC SeaSchiffe\n 1",
+                "label": "ORG"
             },
             {
-                "short_form": "DP",
-                "full_form": "Discharge Port"
+                "text": "SteelsGenslawfuls\n ",
+                "label": "ORG"
             },
             {
-                "short_form": "mts",
-                "full_form": "metric tons"
+                "text": "22k",
+                "label": "DATE"
+            },
+            {
+                "text": "dwt",
+                "label": "PERSON"
+            }
+        ],
+        "confidence_score": 20,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 4,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "15-18 July",
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": "E",
+        "discharge_port": "E",
+        "detected_ports": [
+            "eci"
+        ],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "Delivery: ECI"
+            ]
+        },
+        "maritime_terms": [
+            {
+                "short_form": "ECI",
+                "full_form": "East Coast India"
+            }
+        ],
+        "entities": [
+            {
+                "text": "ECI\n Laycan",
+                "label": "ORG"
+            },
+            {
+                "text": "15",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "35-40 days",
+                "label": "DATE"
+            },
+            {
+                "text": "3.75 Adc",
+                "label": "QUANTITY"
+            }
+        ],
+        "confidence_score": 40,
+        "validation_issues": [
+            "Cargo Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 1,
+                "TONNAGE": 1
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": "33000",
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "HANDYMAX",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "AC SeaSchiffe"
+            ]
+        },
+        "maritime_terms": [
+            {
+                "short_form": "HMAX",
+                "full_form": "Handymax"
+            }
+        ],
+        "entities": [
+            {
+                "text": "AC SeaSchiffe\n 1",
+                "label": "ORG"
+            },
+            {
+                "text": "SteelsGenslawfuls\n 33k",
+                "label": "ORG"
+            },
+            {
+                "text": "dwt",
+                "label": "PERSON"
+            }
+        ],
+        "confidence_score": 20,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 4,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [
+            "91-8459221078"
+        ],
+        "laycan": "21-23 July",
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": "E",
+        "discharge_port": "E",
+        "detected_ports": [
+            "eci"
+        ],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [
+                "91-8459221078"
+            ],
+            "names": [
+                "Delivery: ECI",
+                "Best regards",
+                "Steve",
+                "Sea Schiffe DMCC"
+            ]
+        },
+        "maritime_terms": [
+            {
+                "short_form": "ECI",
+                "full_form": "East Coast India"
+            }
+        ],
+        "entities": [
+            {
+                "text": "ECI\n Laycan",
+                "label": "ORG"
+            },
+            {
+                "text": "21-23 July\n Redel",
+                "label": "DATE"
+            },
+            {
+                "text": "COGH",
+                "label": "ORG"
+            },
+            {
+                "text": "50-55 days",
+                "label": "DATE"
+            },
+            {
+                "text": "3.75 Adc\n",
+                "label": "QUANTITY"
+            },
+            {
+                "text": "Steve\nSea",
+                "label": "PERSON"
+            },
+            {
+                "text": "91-8459221078",
+                "label": "CARDINAL"
+            }
+        ],
+        "confidence_score": 40,
+        "validation_issues": [
+            "Cargo Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": null,
+        "cargo": "Minerals",
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "SUPRAMAX",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [
+            {
+                "short_form": "SMX",
+                "full_form": "Supramax"
             },
             {
                 "short_form": "UMX",
                 "full_form": "Ultramax"
             }
         ],
-        "confidence_score": 100.0,
-        "extraction_status": "HIGH_CONFIDENCE"
-    },
-    {
-        "emails": [
-            "steve@seaschiffe.com"
-        ],
-        "phones": [
-            "+91-8459221078\n\n"
-        ],
-        "laycan": [
-            "20-25 July"
-        ],
-        "dwt": [],
-        "load_port": [
-            "Bushehr"
-        ],
-        "discharge_port": [
-            "Doha"
-        ],
-        "quantity": 45000,
-        "cargo": [
-            "Coal"
-        ],
-        "signature": {
-            "emails": [
-                "steve@seaschiffe.com"
-            ],
-            "phones": [
-                "+91-8459221078\n\n"
-            ],
-            "names": [
-                "Cargo: Coal",
-                "LP: Bushehr",
-                "DP: Doha",
-                "Steve",
-                "Coal shipment available.",
-                "Need vessel urgently."
-            ]
-        },
-        "maritime_terms": [
+        "entities": [
             {
-                "short_form": "LP",
-                "full_form": "Load Port"
+                "text": "AC Sea",
+                "label": "ORG"
             },
             {
-                "short_form": "DP",
-                "full_form": "Discharge Port"
+                "text": "Minerals \n SMX  UMX Max",
+                "label": "PERSON"
             },
             {
-                "short_form": "mts",
-                "full_form": "metric tons"
+                "text": "20",
+                "label": "CARDINAL"
             }
         ],
-        "confidence_score": 100.0,
-        "extraction_status": "HIGH_CONFIDENCE"
+        "confidence_score": 30,
+        "validation_issues": [
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 4,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "10-15 days",
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": "K",
+        "discharge_port": "K",
+        "detected_ports": [
+            "kandla",
+            "wci"
+        ],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "Delivery: Aps Kandla",
+                "Redel: Wci"
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "3rd - 5th",
+                "label": "DATE"
+            },
+            {
+                "text": "10-15 days",
+                "label": "DATE"
+            },
+            {
+                "text": "Chinese",
+                "label": "NORP"
+            },
+            {
+                "text": "Board\n Coastal",
+                "label": "ORG"
+            },
+            {
+                "text": "Board\n 3.75 Adc",
+                "label": "ORG"
+            }
+        ],
+        "confidence_score": 40,
+        "validation_issues": [
+            "Cargo Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 1,
+                "TONNAGE": 1
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "35-42K",
+        "dwt": "42000",
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "ACCT : DAT",
+                "REDELY : W.W."
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "35",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "TM S.E. ASIA INT",
+                "label": "ORG"
+            },
+            {
+                "text": "REDELY",
+                "label": "ORG"
+            },
+            {
+                "text": "W.W.\n CAN DO PERIOD",
+                "label": "ORG"
+            },
+            {
+                "text": "1-YEAR",
+                "label": "DATE"
+            }
+        ],
+        "confidence_score": 20,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": null,
+        "dwt": null,
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [],
+        "entities": [],
+        "confidence_score": 0,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "VC",
+            "scores": {
+                "VC": 0,
+                "TC": 0,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "16-20 JULY",
+        "dwt": null,
+        "cargo": "Slag",
+        "cargo_type": "Dry Bulk",
+        "vessel_name": null,
+        "vessel_type": "SUPRAMAX",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "ACCT CENTURION BULK",
+                "TRIP WITH SLAGCLINKER",
+                "TRY PERIOD"
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "16-20",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "JULY",
+                "label": "DATE"
+            },
+            {
+                "text": "3.75PCT",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "ADDCOM",
+                "label": "PERSON"
+            },
+            {
+                "text": "1.25",
+                "label": "CARDINAL"
+            }
+        ],
+        "confidence_score": 40,
+        "validation_issues": [
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 1,
+                "TONNAGE": 1
+            }
+        },
+        "template_type": "VC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "15-20 JULY",
+        "dwt": "50000",
+        "cargo": null,
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": null,
+        "discharge_port": null,
+        "detected_ports": [],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": []
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "ONE",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "50",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "SUB",
+                "label": "ORG"
+            },
+            {
+                "text": "15-20",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "JULY",
+                "label": "DATE"
+            }
+        ],
+        "confidence_score": 20,
+        "validation_issues": [
+            "Cargo Missing",
+            "Load Port Missing",
+            "Discharge Port Missing",
+            "Quantity Missing"
+        ],
+        "extraction_status": "LOW_CONFIDENCE",
+        "llm_fallback": {
+            "llm_response": "LLM fallback unavailable",
+            "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}"
+        }
+    },
+    {
+        "email_type": {
+            "email_type": "TC",
+            "scores": {
+                "VC": 0,
+                "TC": 3,
+                "TONNAGE": 0
+            }
+        },
+        "template_type": "TC_CARGO",
+        "emails": [],
+        "phones": [],
+        "laycan": "40-50 DAYS",
+        "dwt": null,
+        "cargo": "Rice",
+        "cargo_type": "Unknown",
+        "vessel_name": null,
+        "vessel_type": "Unknown Vessel",
+        "imo": null,
+        "open_port": null,
+        "load_port": "P",
+        "discharge_port": "P",
+        "detected_ports": [
+            "paranagua",
+            "santos",
+            "pg"
+        ],
+        "quantity": null,
+        "grain_capacity": null,
+        "grt": null,
+        "nrt": null,
+        "loa": null,
+        "beam": null,
+        "bale_capacity": null,
+        "signature": {
+            "emails": [],
+            "phones": [],
+            "names": [
+                "- NEED ICA",
+                "DELV:SANTOS  PARANAGUA RANGE",
+                "REDLV:PG",
+                "SPOT DATES"
+            ]
+        },
+        "maritime_terms": [],
+        "entities": [
+            {
+                "text": "1TCT",
+                "label": "DATE"
+            },
+            {
+                "text": "70 DAYS",
+                "label": "DATE"
+            },
+            {
+                "text": "3.75",
+                "label": "CARDINAL"
+            },
+            {
+                "text": "3.75",
+                "label": "CARDINAL"
+            }
+        ],
+        "confidence_score": 60,
+        "validation_issues": [
+            "Quantity Missing"
+        ],
+        "extraction_status": "MEDIUM_CONFIDENCE"
     }
 ]

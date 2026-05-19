@@ -2,18 +2,22 @@ Cargo: Corn
 LP: Paranagua
 DP: BIK
 30000 mts
+58000 DWT
 Laycan: 16-20 July
 Vessel Type: UMX
+
 ---
 
 Cargo: Coal
 LP: Bushehr
 DP: Doha
 45000 mts
+72000 DWT
 Laycan: 20-25 July
+Region: WAFR
 
 Steve
-Email: steve@seaschiffe.com
+Email: Steve@SeaSchiffe.COM
 Phone: +91-8459221078
 
 Coal shipment available.
