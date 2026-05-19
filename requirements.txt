@@ -6,6 +6,5 @@ plotly
 sqlalchemy
 requests
 spacy
-openai
 python-dotenv
 numpy
