@@ -1,0 +1,4 @@
+Laden consumption: 12.5 mt/day IFO 380
+Ballast consumption: 11.0 mt/day
+Eco speed 12 knots on 25 mt IFO per day.
+Main engine MAN B&W 6S50MC-C

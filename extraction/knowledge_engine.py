@@ -32,6 +32,10 @@ def detect_ports(text):
 
             detected.append(port)
 
+    for alias, normalized in PORT_ALIASES.items():
+        if alias.lower() in text.lower() and normalized not in detected:
+            detected.append(normalized)
+
     return detected
 
 
@@ -40,6 +44,11 @@ def detect_ports(text):
 # =========================
 
 def detect_vessel_type(text):
+    from extraction.semantic_rules import normalize_vessel_type
+
+    normalized = normalize_vessel_type(text)
+    if normalized != "Unknown Vessel":
+        return normalized
 
     for short_form, full_form in VESSEL_TYPES.items():
 

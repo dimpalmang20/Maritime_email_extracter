@@ -1,13 +1,44 @@
 def classify_cargo(cargo_name):
 
-    cargo_name = cargo_name.lower()
+    if not cargo_name:
+        return "Unknown"
 
-    dry_bulk = ["corn", "coal", "iron ore", "slag"]
+    cargo_name = cargo_name.lower().strip()
+
+    agricultural = ["corn", "maize", "soybean meal", "soyabean meal", "rice", "grain", "bagged rice"]
+    fertilizer = ["urea", "fertilizers", "npk", "fertilizer"]
+    steel = ["steel coils", "steel products"]
+    dry_bulk = [
+        "coal",
+        "iron ore",
+        "iron slag",
+        "slag",
+        "clinker",
+        "limestone",
+        "bulk harmless cargo",
+        "harmless bulk cargo",
+        "calcium carbonate",
+        "minerals",
+        "petcoke",
+        "sulphur",
+        "bauxite",
+        "nickel ore",
+        "cement",
+    ]
     chemical = ["methanol", "chemical"]
     gas = ["lng", "lpg", "gas"]
     crude = ["crude oil", "oil"]
 
-    if cargo_name in dry_bulk:
+    if cargo_name in agricultural:
+        return "Agricultural Bulk"
+
+    elif cargo_name in fertilizer:
+        return "Fertilizer"
+
+    elif cargo_name in steel:
+        return "Steel Products"
+
+    elif cargo_name in dry_bulk:
         return "Dry Bulk"
 
     elif cargo_name in chemical:

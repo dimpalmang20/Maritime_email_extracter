@@ -7,8 +7,8 @@ from extraction.parser import process_email
 
 app = FastAPI()
 
-from database.db import engine
-from database.models import Base
+from database.db import engine, SessionLocal
+from database.models import Base, MaritimeRecord
 
 Base.metadata.create_all(bind=engine)
 
@@ -73,7 +73,7 @@ def extract_email(data: dict):
 
     result = process_email(text)
 
-    return result
+    return [row.get("structured_record", row) for row in result]
 
 
 
@@ -161,7 +161,7 @@ def email_parser(payload: EmailPayload):
 
         "sender": payload.sender,
 
-        "extraction_result": result
+        "extraction_result": [row.get("structured_record", row) for row in result]
     }
 
 
@@ -180,7 +180,7 @@ def bulk_email_parser(payload: BulkEmailPayload):
 
             "sender": email.sender,
 
-            "result": extracted
+            "result": [row.get("structured_record", row) for row in extracted]
         })
 
     return {

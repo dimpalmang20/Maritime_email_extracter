@@ -2,6 +2,8 @@ import os
 import spacy
 
 from extraction.regex_engine import *
+from extraction.regex_engine_v2 import extract_quantities_v2, extract_cargo_entries_v2, extract_port_pairs_v2
+from extraction.knowledge_base import CARGO_KEYWORDS
 
 
 # Load trained maritime ML model
@@ -30,7 +32,10 @@ def hybrid_extract(text):
 
         "dwt": extract_dwt(text),
 
-        "laycan": extract_laycan(text)
+        "laycan": extract_laycan(text),
+        "cargo_entries": extract_cargo_entries_v2(text, CARGO_KEYWORDS),
+        "quantity_entries": extract_quantities_v2(text),
+        "port_pairs": extract_port_pairs_v2(text),
     }
 
     # ML ENTITY EXTRACTION

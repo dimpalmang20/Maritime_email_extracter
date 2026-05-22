@@ -1,6 +1,17 @@
 def detect_template(text):
 
     text = text.lower()
+    from extraction.semantic_rules import is_vessel_spec_text
+
+    # Priority classifier: vessel spec/open evidence overrides cargo words.
+    if is_vessel_spec_text(text) or (
+        ("dwt" in text or "deadweight" in text)
+        and ("open" in text or "prompt" in text or "spot" in text or "built" in text or "imo" in text)
+    ):
+        return "TONNAGE"
+
+    if any(k in text for k in ("delivery", "redelivery", "redel", "duration", "time charter", "tct")):
+        return "TC"
 
 
     # =========================
@@ -110,5 +121,9 @@ def detect_template(text):
 
 
     detected = max(scores, key=scores.get)
+    if detected == "VC_CARGO":
+        return "VC"
+    if detected == "TC_CARGO":
+        return "TC"
 
     return detected

@@ -8,8 +8,8 @@ def extract_email(text):
 
 
 def extract_phone(text):
-    pattern = r'\+?\d[\d\s\-]{8,15}'
-    return re.findall(pattern, text)
+    from extraction.field_filters import extract_phone_strict
+    return extract_phone_strict(text)
 
 
 def extract_laycan(text):
@@ -26,30 +26,30 @@ def extract_dwt(text):
     return result
 
 def extract_lp(text):
+    from extraction.maritime_parse import extract_labeled_ports
 
-    text = text.lower()
-
+    lp_list, _ = extract_labeled_ports(text)
+    if lp_list:
+        return [p.title() for p in lp_list]
+    lowered = text.lower()
     for port in PORT_KEYWORDS:
-
-        if port in text:
-
+        if re.search(rf'(?i)\bfrom\s+{re.escape(port)}\b', lowered):
             return port.title()
-
     return None
 
 
 
 
 def extract_dp(text):
+    from extraction.maritime_parse import extract_labeled_ports
 
-    text = text.lower()
-
+    _, dp_list = extract_labeled_ports(text)
+    if dp_list:
+        return [p.title() for p in dp_list]
+    lowered = text.lower()
     for port in PORT_KEYWORDS:
-
-        if port in text:
-
+        if re.search(rf'(?i)\bto\s+{re.escape(port)}\b', lowered):
             return port.title()
-
     return None
 
 

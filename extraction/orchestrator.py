@@ -1,6 +1,7 @@
 from extraction.hybrid_extractor import hybrid_extract
 
 from extraction.llm_fallback import send_to_llm
+from extraction.confidence import calculate_confidence
 
 
 def orchestrate_extraction(text):
@@ -11,31 +12,34 @@ def orchestrate_extraction(text):
 
     ml_entities = result["ml_entities"]
 
-    confidence_score = 0
-
-
-    # REGEX CONFIDENCE
-
-    if regex_data["cargo"]:
-        confidence_score += 20
-
-    if regex_data["load_port"]:
-        confidence_score += 20
-
-    if regex_data["discharge_port"]:
-        confidence_score += 20
-
-    if regex_data["dwt"]:
-        confidence_score += 20
-
-    if regex_data["laycan"]:
-        confidence_score += 20
-
-
-    # ML BONUS
-
+    orchestration_payload = {
+        "cargo": regex_data.get("cargo"),
+        "load_port": regex_data.get("load_port"),
+        "discharge_port": regex_data.get("discharge_port"),
+        "dwt": regex_data.get("dwt"),
+        "laycan": regex_data.get("laycan"),
+        "vessel_type": "Unknown Vessel",
+        "imo": None,
+        "cargo_legs": [
+            {
+                "cargo_name": item.get("cargo_name"),
+                "quantity": (regex_data.get("quantity_entries") or [{}])[idx].get("quantity")
+                if idx < len(regex_data.get("quantity_entries") or [])
+                else None,
+                "load_port": (regex_data.get("port_pairs") or [{}])[idx].get("load_port")
+                if idx < len(regex_data.get("port_pairs") or [])
+                else None,
+                "discharge_port": (regex_data.get("port_pairs") or [{}])[idx].get("discharge_port")
+                if idx < len(regex_data.get("port_pairs") or [])
+                else None,
+            }
+            for idx, item in enumerate(regex_data.get("cargo_entries") or [])
+        ],
+        "validation_issues": [],
+    }
+    confidence_score = calculate_confidence(orchestration_payload)
     if len(ml_entities) > 0:
-        confidence_score += 10
+        confidence_score = min(100, confidence_score + 5)
 
 
     # FINAL DECISION

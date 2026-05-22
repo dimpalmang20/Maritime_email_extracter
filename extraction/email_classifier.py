@@ -1,6 +1,16 @@
 def classify_email_type(text):
 
     text = text.lower()
+    from extraction.semantic_rules import is_vessel_spec_text
+
+    if is_vessel_spec_text(text) or (
+        ("dwt" in text or "deadweight" in text)
+        and ("open" in text or "prompt" in text or "spot" in text or "built" in text or "imo" in text)
+    ):
+        return {"email_type": "TONNAGE", "scores": {"VC": 0, "TC": 0, "TONNAGE": 99}}
+
+    if any(k in text for k in ("delivery", "redelivery", "redel", "duration", "time charter", "tct")):
+        return {"email_type": "TC", "scores": {"VC": 0, "TC": 99, "TONNAGE": 0}}
 
 
     # VC patterns
